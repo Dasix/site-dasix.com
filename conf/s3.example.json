@@ -1,0 +1,5 @@
+{
+	"key": "PUBLIC_KEY",
+	"secret": "SECRET_KEY",
+	"bucket": "BUCKET_NAME"
+}
