@@ -9,7 +9,7 @@ module.exports = {
 
 	siteContent: {
 		files: [
-			{expand: true, flatten: false, cwd: "src", src: ["**"], dest: "dist/"}
+			{expand: true, flatten: false, cwd: "src/static", src: ["**"], dest: "dist/"}
 		]
 	}
 

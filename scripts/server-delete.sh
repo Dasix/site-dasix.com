@@ -2,4 +2,4 @@
 
 # This script will delete the pm2 process for the documentation server.
 
-pm2 delete ./env/pm2/doc-server.json
+pm2 delete ./env/pm2/web-server.json

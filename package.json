@@ -10,12 +10,21 @@
 		"url"   : "http://www.lukechavers.com/"
 	},
 	"scripts"         : {
-		"server-start"   : "./scripts/server-start.sh",
-		"server-stop"    : "./scripts/server-stop.sh",
-		"server-restart" : "./scripts/server-restart.sh",
-		"server-reload"  : "./scripts/server-reload.sh",
-		"server-delete"  : "./scripts/server-delete.sh",
-		"server-status"  : "./scripts/server-status.sh"
+		"watchers-start"   : "scripts/watchers-start.sh",
+		"watchers-stop"    : "scripts/watchers-stop.sh",
+		"watchers-restart" : "scripts/watchers-restart.sh",
+		"watchers-reload"  : "scripts/watchers-reload.sh",
+		"watchers-delete"  : "scripts/watchers-delete.sh",
+		"watchers-status"  : "scripts/watchers-status.sh",
+		"watchers-monitor" : "scripts/watchers-monitor.sh",
+		"server-start"     : "scripts/server-start.sh",
+		"server-stop"      : "scripts/server-stop.sh",
+		"server-restart"   : "scripts/server-restart.sh",
+		"server-reload"    : "scripts/server-reload.sh",
+		"server-delete"    : "scripts/server-delete.sh",
+		"server-status"    : "scripts/server-status.sh",
+		"server-monitor"   : "scripts/server-monitor.sh",
+		"deploy"           : "scripts/deploy.sh"
 	},
 	"files"           : [ ],
 	"keywords"        : [ ],
@@ -26,5 +35,7 @@
 		"grunt-s3-site"       : "0.1.2",
 		"grunt-shell"         : "1.1.2"
 	},
-	"dependencies"    : { }
+	"dependencies"    : {
+		"grunt-contrib-watch" : "0.6.1"
+	}
 }

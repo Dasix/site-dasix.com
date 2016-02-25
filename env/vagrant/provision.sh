@@ -14,4 +14,6 @@ source "/project/env/vagrant/provision/_paths.sh"
 # Install Dependencies
 "$VG_SCRIPT_ROOT/install-node-js.sh"
 "$VG_SCRIPT_ROOT/npm-install-grunt.sh"
+"$VG_SCRIPT_ROOT/npm-install-pm2.sh"
+"$VG_SCRIPT_ROOT/npm-install-livereloadx.sh"
 "$VG_SCRIPT_ROOT/npm-install-deps.sh"
