@@ -25,6 +25,7 @@
 		"server-delete"    : "scripts/server-delete.sh",
 		"server-status"    : "scripts/server-status.sh",
 		"server-monitor"   : "scripts/server-monitor.sh",
+		"build"            : "scripts/build.sh",
 		"deploy"           : "scripts/deploy.sh"
 	},
 	"keywords"        : [
