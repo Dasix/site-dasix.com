@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "0.12"
+before_install:
+  - chmod +x ./scripts -R
 before_script:
   - npm install grunt-cli -g
 deploy:
