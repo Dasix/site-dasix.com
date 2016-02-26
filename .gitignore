@@ -49,6 +49,7 @@ atlassian-ide-plugin.xml
 out/
 docs/
 dist/bower_components
+dist/
 
 # -- Vagrant ---------------------------- #
 
