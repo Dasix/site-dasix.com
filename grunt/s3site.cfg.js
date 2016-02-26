@@ -5,16 +5,13 @@
  * @created 2016-02-23
  */
 
-var path 		= require("path");
-var s3config 	= require( path.join( __dirname, "../conf/s3.json") );
-
 module.exports 	= {
 	options: {
 		s3config: {
-			accessKeyId: s3config.key,
-			secretAccessKey: s3config.secret
+			accessKeyId: process.env.AWS_ACCESS_KEY,
+			secretAccessKey: process.env.AWS_SECRET_KEY
 		},
-		name: s3config.bucket
+		name: process.env.AWS_S3_DEPLOY_BUCKET
 	},
 	siteContent: {
 		options: {

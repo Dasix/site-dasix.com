@@ -32,6 +32,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( "deploy", [ "rebuild", "publish" ] );
 
 	// Default entry point
-	grunt.registerTask( "default", [ "deploy" ] );
+	grunt.registerTask( "default", [ "rebuild" ] );
 
 };
