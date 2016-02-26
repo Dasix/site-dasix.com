@@ -1,15 +1,15 @@
 #!/bin/bash
 
-ls -la
+ls -la ./dist
 
 echo ""
 echo "---- Executing Build (scripts/build.sh) ---------------------------------"
 echo ""
-4
+
 grunt build
 
 echo ""
 echo "---- Build Finished (scripts/build.sh) ----------------------------------"
 echo ""
 
-ls -la
+ls -la ./dist
