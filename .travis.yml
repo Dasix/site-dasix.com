@@ -1,8 +1,6 @@
 language: node_js
 node_js:
 - '0.12'
-env:
-- AWS_S3_DEPLOY_BUCKET=dasix.com
 before_install:
 - chmod +x ./scripts -R
 before_script:
