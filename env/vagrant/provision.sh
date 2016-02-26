@@ -1,19 +1,31 @@
 #!/bin/bash
 
-# This is the main entry point for Vagrant provisioning.  This file will be
-# executed within the Vagrant powered VM immediately after it is created and
-# can be executed again via the "vagrant provision" command.  You can also
-# execute this file from within the VM itself through SSH as shown below:
-#
-#     [root@mybox] /project/env/vagrant/provision.sh
-#
 
-# Load common path variables
-source "/project/env/vagrant/provision/_paths.sh"
 
-# Install Dependencies
-"$VG_SCRIPT_ROOT/install-node-js.sh"
-"$VG_SCRIPT_ROOT/npm-install-grunt.sh"
-"$VG_SCRIPT_ROOT/npm-install-pm2.sh"
-"$VG_SCRIPT_ROOT/npm-install-livereloadx.sh"
-"$VG_SCRIPT_ROOT/npm-install-deps.sh"
+# This script is executed by Vagrant during provisioning (which happens
+# only once, whenever a new VM is created, or when manually executed).
+
+
+
+# Find my script location
+PROVISION_SCRIPT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Settings
+GITHUB_SCRIPT_USER="vmadman"
+GITHUB_SCRIPT_REPO="linux-scripts"
+GITHUB_SCRIPT_BRANCH="master"
+GITHUB_SCRIPT_PATH="vagrant/centos7/dev/v1"
+
+# Include the GitHub Execution Helper
+source "$PROVISION_SCRIPT_ROOT/github-exec.sh"
+
+# Run Several Scripts from GitHub Files..
+exec_github_script "yum-update-cache"
+exec_github_script "yum-install-common"
+exec_github_script "yum-install-node-js"
+exec_github_script "npm-install-pm2"
+exec_github_script "npm-install-livereloadx.sh"
+exec_github_script "npm-install-grunt.sh"
+exec_github_script "npm-create-dep-symlink"
+exec_github_script "npm-install-deps"
+exec_github_script "gem-install-travis-cli"
