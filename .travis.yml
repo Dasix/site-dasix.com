@@ -2,12 +2,12 @@ language: node_js
 node_js:
   - "0.12"
 before_install:
-  - chmod +x ./scripts -R
+  - "chmod +x ./scripts -R"
 before_script:
-  - npm install grunt-cli -g
+  - "npm install grunt-cli -g"
 deploy:
 	skip_cleanup: true
-	script: ./scripts/deploy.sh
+	script: "./scripts/deploy.sh"
 branches:
   only:
     - master
