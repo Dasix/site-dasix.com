@@ -47,7 +47,6 @@ atlassian-ide-plugin.xml
 # -- Common Render / Output Dirs -------- #
 
 out/
-docs/
 dist/bower_components
 dist/
 

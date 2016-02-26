@@ -25,8 +25,7 @@
 		"server-delete"    : "scripts/server-delete.sh",
 		"server-status"    : "scripts/server-status.sh",
 		"server-monitor"   : "scripts/server-monitor.sh",
-		"ci-build"         : "scripts/ci-build.sh",
-		"deploy"           : "scripts/deploy.sh"
+		"ci-build"         : "scripts/ci-build.sh"
 	},
 	"keywords"        : [
 		"dasix", "website", "s3", "static", "dasix.com"
@@ -36,7 +35,6 @@
 		"grunt-contrib-clean" : "1.0.0",
 		"grunt-contrib-watch" : "0.6.1",
 		"grunt-contrib-copy"  : "0.8.2",
-		"grunt-s3-site"       : "0.1.2",
 		"grunt-shell"         : "1.1.2"
 	},
 	"dependencies"    : {
