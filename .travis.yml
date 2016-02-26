@@ -9,3 +9,5 @@ deploy:
 branches:
   only:
     - master
+env:
+  - AWS_S3_DEPLOY_BUCKET=dasix.com
