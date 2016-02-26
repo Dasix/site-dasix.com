@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ls -la ./dist
-
 echo ""
 echo "---- Executing CI Build (scripts/ci-build.sh) ---------------------------"
 echo ""
@@ -13,5 +11,3 @@ grunt build
 echo ""
 echo "---- CI Build Finished (scripts/ci-build.sh) ----------------------------"
 echo ""
-
-ls -la ./dist
