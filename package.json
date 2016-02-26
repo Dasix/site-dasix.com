@@ -10,6 +10,7 @@
 		"url"   : "http://www.lukechavers.com/"
 	},
 	"scripts"         : {
+		"test"             : "scripts/test.sh",
 		"watchers-start"   : "scripts/watchers-start.sh",
 		"watchers-stop"    : "scripts/watchers-stop.sh",
 		"watchers-restart" : "scripts/watchers-restart.sh",
