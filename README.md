@@ -13,5 +13,6 @@ if you find any part of this website useful, feel free to copy and use it.
 
 ### Developing / Contributing
 
-See: [docs/md/developing.md](docs/md/developing.md)
+* [Developing](docs/md/developing.md)
+* [Development Scripts](docs/md/scripts.md)
 

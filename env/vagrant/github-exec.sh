@@ -21,6 +21,6 @@ function exec_github_script {
 	echo ""
 	echo "-- Executing GitHub Script: $GITHUB_SCRIPT_FILENAME --"
 	echo ""
-	wget -q -O - "$GITHUB_SCRIPT_RAW_URL" | bash
+	wget -q --retry-connrefused --tries=5 --waitretry=3 -O - "$GITHUB_SCRIPT_RAW_URL" | bash
 
 }
