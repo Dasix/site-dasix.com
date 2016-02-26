@@ -1,15 +1,5 @@
 language: node_js
 node_js:
   - "0.12"
-before_install:
-  - "chmod +x ./scripts -R"
-before_script:
-  - "npm install grunt-cli -g"
-deploy:
-	skip_cleanup: true
-	script: "./scripts/deploy.sh"
-branches:
-  only:
-    - master
 env:
   - AWS_S3_DEPLOY_BUCKET=dasix.com
