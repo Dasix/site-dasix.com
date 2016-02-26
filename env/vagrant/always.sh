@@ -7,8 +7,8 @@
 
 
 
-# Find my script location
-PROVISION_SCRIPT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Define script location
+PROVISION_SCRIPT_ROOT="/project/env/vagrant"
 
 # Settings
 GITHUB_SCRIPT_USER="vmadman"
