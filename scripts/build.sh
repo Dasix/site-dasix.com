@@ -5,8 +5,8 @@ ls -la
 echo ""
 echo "---- Executing Build (scripts/build.sh) ---------------------------------"
 echo ""
-
-grunt rebuild
+4
+grunt build
 
 echo ""
 echo "---- Build Finished (scripts/build.sh) ----------------------------------"
