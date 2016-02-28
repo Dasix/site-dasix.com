@@ -7,10 +7,6 @@
 
 module.exports = {
 
-	buildDocs: {
-		command: "npm run-script doc"
-	},
-
 	runTests: {
 		command: "scripts/test.sh"
 	}

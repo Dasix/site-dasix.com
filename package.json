@@ -1,6 +1,6 @@
 {
 	"name"            : "dasix-com",
-	"version"         : "0.1.1",
+	"version"         : "0.1.2",
 	"description"     : "The source for our website, http://dasix.com",
 	"license"         : "MIT",
 	"private"         : true,
