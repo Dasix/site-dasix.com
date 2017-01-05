@@ -1,10 +1,23 @@
 language: node_js
+
 node_js:
 - '0.12'
+
+branches:
+  only:
+  - master
+
+notifications:
+  slack: dasix:$SLACK_TOKEN
+  email:
+    on_failure: always
+
 before_install:
 - chmod +x ./scripts -R
+
 before_deploy:
 - npm run-script grits
+
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
