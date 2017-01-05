@@ -1,3 +1,18 @@
+# --------------------------------------- #
+#     Luke's Universal Editor Config       #
+# - - - - - - - - - - - - - - - - - - - - #
+#  Version  : 1.0                         #
+#  Author   : Luke Chavers                #
+#  Created  : Monday, Jan 26th, 2015      #
+#  Based On : https://editorconfig.org    #
+# - - - - - - - - - - - - - - - - - - - - #
+#            Luke is awesome              #
+# - - - - - - - - - - - - - - - - - - - - #
+#  EditorConfig helps developers define   #
+#  and maintain consistent coding styles  #
+#   between different editors and IDEs    #
+# --------------------------------------- #
+
 # -- General Settings ------------------- #
 
 root = true

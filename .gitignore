@@ -1,3 +1,18 @@
+# --------------------------------------- #
+#    Luke's Universal GIT Ignore File      #
+# - - - - - - - - - - - - - - - - - - - - #
+#  Version  : 1.1                         #
+#  Author   : Luke Chavers                #
+#  Created  : Monday, Jan 26th, 2015      #
+#  Based On : https://www.gitignore.io    #
+# - - - - - - - - - - - - - - - - - - - - #
+#            Luke is awesome!             #
+# - - - - - - - - - - - - - - - - - - - - #
+#  This .gitignore file is pretty robust  #
+# and should be appropriate for most, if  #
+#             not all projects.           #
+# --------------------------------------- #
+
 # -- Generic / Misc ----------------------#
 
 .tmp
@@ -23,6 +38,7 @@ bower_components
 # -- NPM -------------------------------- #
 
 npm-debug.log
+npm-debug.log*
 
 # -- Common Editors --------------------- #
 
@@ -34,7 +50,6 @@ nbproject
 
 # -- IntelliJ / phpStorm / webStorm ----- #
 
-.idea/
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml
@@ -47,8 +62,10 @@ atlassian-ide-plugin.xml
 # -- Common Render / Output Dirs -------- #
 
 out/
+src/docs/
 dist/bower_components
-dist/
+dist
+
 
 # -- Vagrant ---------------------------- #
 
@@ -60,7 +77,7 @@ auth/*.tar.gz
 
 # -- Common C2C Patterns ---------------- #
 
-/docs/api
+/src/docs/api
 *.depr.*
 */backup/*
 tmp/
