@@ -8,7 +8,7 @@ branches:
   - master
 
 notifications:
-  slack: dasix:$SLACK_TOKEN
+  slack: $SLACK_TOKEN
   email:
     on_failure: always
 
