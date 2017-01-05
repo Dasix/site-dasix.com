@@ -1,0 +1,12 @@
+{
+	"paths": {
+		"root": [
+			"../src"
+		],
+		"output": [
+			"../dist"
+		]
+	},
+	"plugins": {
+	}
+}

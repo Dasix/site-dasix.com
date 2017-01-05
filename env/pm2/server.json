@@ -1,0 +1,19 @@
+{
+	"apps" : [
+		{
+			"name"             : "server",
+			"script"           : "/project/node_modules/grits/bin/grits.js",
+			"args"             : [
+				"--verbose",
+				"--watch",
+				"--serve",
+				"--port", "3570",
+				"--config", "/project/conf/grits.conf.json",
+				"--noroot"
+			],
+			"watch"            : false,
+			"exec_interpreter" : "node",
+			"cwd"              : "/project"
+		}
+	]
+}

@@ -4,39 +4,46 @@
 	"description"     : "The source for our website, http://dasix.com",
 	"license"         : "MIT",
 	"private"         : true,
+	"repository"	  : "https://github.com/Dasix/dasix.com",
 	"author"          : {
 		"name"  : "Luke Chavers",
 		"email" : "luke@chavers.io",
 		"url"   : "http://www.lukechavers.com/"
 	},
-	"scripts"         : {
-		"test"             : "scripts/test.sh",
-		"watchers-start"   : "scripts/watchers-start.sh",
-		"watchers-stop"    : "scripts/watchers-stop.sh",
-		"watchers-restart" : "scripts/watchers-restart.sh",
-		"watchers-reload"  : "scripts/watchers-reload.sh",
-		"watchers-delete"  : "scripts/watchers-delete.sh",
-		"watchers-status"  : "scripts/watchers-status.sh",
-		"watchers-monitor" : "scripts/watchers-monitor.sh",
-		"server-start"     : "scripts/server-start.sh",
-		"server-stop"      : "scripts/server-stop.sh",
-		"server-restart"   : "scripts/server-restart.sh",
-		"server-reload"    : "scripts/server-reload.sh",
-		"server-delete"    : "scripts/server-delete.sh",
-		"server-status"    : "scripts/server-status.sh",
-		"server-monitor"   : "scripts/server-monitor.sh",
-		"ci-build"         : "scripts/ci-build.sh"
+	"scripts"        : {
+		"grits"          : "scripts/grits-render-once.sh",
+		"live"           : "scripts/grits-render-live.sh",
+		"live-quiet"     : "scripts/grits-render-live-quiet.sh",
+		"grits-version"  : "scripts/grits-version.sh",
+		"grits-config"   : "scripts/grits-config.sh",
+		"grits-help"     : "scripts/grits-help.sh",
+		"server-delete"  : "scripts/server-delete.sh",
+		"server-monitor" : "scripts/server-monitor.sh",
+		"server-reload"  : "scripts/server-reload.sh",
+		"server-restart" : "scripts/server-restart.sh",
+		"server-start"   : "scripts/server-start.sh",
+		"server-status"  : "scripts/server-status.sh",
+		"server-stop"    : "scripts/server-stop.sh"
 	},
 	"keywords"        : [
 		"dasix", "website", "s3", "static", "dasix.com"
 	],
-	"devDependencies" : {
-		"grunt"               : "0.4.5",
-		"grunt-contrib-clean" : "1.0.0",
-		"grunt-contrib-watch" : "0.6.1",
-		"grunt-contrib-copy"  : "0.8.2",
-		"grunt-shell"         : "1.1.2"
-	},
 	"dependencies"    : {
+		"grits"             : "dasix/grits#master",
+		"grits-plugin-docs" : "dasix/grits-plugin-docs#master",
+		"grits-plugin-pdf"  : "dasix/grits-plugin-pdf#master",
+		"lodash"            : "^4.8.1",
+		"tipe"              : "^0.1.12"
+	},
+	"//dependencies" : {
+		"grunt"               : "0.4.5",
+		"grunt-contrib-clean" : "0.7.0",
+		"grunt-contrib-copy"  : "0.8.2",
+		"grunt-contrib-watch" : "0.6.1",
+		"grunt-sass"          : "1.1.0",
+		"grunt-shell"         : "1.1.2",
+		"lodash"              : "4.3.0",
+		"tipe"                : "0.1.12",
+		"underscore"          : "1.8.3"
 	}
 }
