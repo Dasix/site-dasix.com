@@ -3,15 +3,12 @@ node_js:
 - '0.12'
 before_install:
 - chmod +x ./scripts -R
-before_script:
-- npm install grunt-cli -g
 before_deploy:
-- npm run-script ci-build
+- npm run-script grits
 deploy:
   provider: s3
-  access_key_id: AKIAJZMOUKXBSSKSPKEA
-  secret_access_key:
-    secure: mP3eXf7Ku0Ewsp41ZO/ncfql87htUAUDCGy7yyQCe0CxVOg+Ju4DYdfgiSoO9gFm9ghWx5Ucs1a2zIClgz4GBgDTZ3FyI0n+PDMU0xSoXpnowzYnX/MFmDmxeg8YB/qDb5EDkds9saPm1xf1JSueLqUugjeBzHqRse4CmyZrNqvJw3Ej85NaCEVcrY5QJBqZJbf3yLYKWDXRfIjZfb+o+Oi6LgdI4GFvranQ1IG8eR/7eY2UYs5LOT//RQD54WCH8spirmaVp4QnJX3LggeAY867Yn0wMad7sFDxDFr5VKeyf/pbIhi7WJtP4eXNr0UHaaYvdHlXTP6D0fmWn3DiKuEhRWuvzLQltVWCFkhEX6+qsQEUn6aviAN5WT2xFtvGQRuMxIVZibGi0wU3Oi1jE9QjB06cay+J4YVE7gKjNnMbaUApCx6gC8skXY1YuMC504QhKu/cIpsa44ibN3GgZw6ec6TkY328B2Q4pPtIq4mfPqHndP5MhcqVNu3HIgndibzilx+K5Uqv3f0SsRgU+BICh9vdXbLDBBVb91o4lxt1L4ZQDdxI4q/2MGictowzVQdJ6/mX8LL/DvlvGgm/6xxcDKp9WrKSx2enVVYyTPN/BIjJganun3FhaiL+LLe1gpKgYjgGZQi62PQNKqkh9nCVSuGKQRNI6geLMaY8A5Y=
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
   bucket: dasix.com
   local-dir: dist
   acl: public_read

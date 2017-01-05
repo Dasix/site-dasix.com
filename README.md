@@ -13,6 +13,6 @@ if you find any part of this website useful, feel free to copy and use it.
 
 ### Developing / Contributing
 
-* [Developing](src/docs/md/developing.md)
-* [Development Scripts](src/docs/md/scripts.md)
+* [Developing](src/internal-docs/md/developing.md)
+* [Development Scripts](src/internal-docs/md/scripts.md)
 

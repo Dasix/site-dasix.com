@@ -62,7 +62,7 @@ atlassian-ide-plugin.xml
 # -- Common Render / Output Dirs -------- #
 
 out/
-src/docs/
+docs/
 dist/bower_components
 dist
 
@@ -77,7 +77,7 @@ auth/*.tar.gz
 
 # -- Common C2C Patterns ---------------- #
 
-/src/docs/api
+/src/internal-docs/api
 *.depr.*
 */backup/*
 tmp/
