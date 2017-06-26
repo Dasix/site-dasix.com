@@ -1,7 +1,7 @@
 Dasix.com
 ==========
 
-[![Build Status](https://travis-ci.org/Dasix/dasix.com.svg?branch=master)](https://travis-ci.org/Dasix/dasix.com)
+[![Build Status](https://travis-ci.org/Dasix/site-dasix.com.svg?branch=master)](https://travis-ci.org/Dasix/site-dasix.com)
 
 This is the source code for our website, http://dasix.com.  It is a work in
 progress and offers very little that others would be interested in.  Still,
