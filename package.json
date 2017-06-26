@@ -1,49 +1,53 @@
 {
-	"name"            : "dasix-com",
-	"version"         : "0.2.0",
-	"description"     : "The source for our website, http://dasix.com",
-	"license"         : "MIT",
-	"private"         : true,
-	"repository"	  : "https://github.com/Dasix/dasix.com",
-	"author"          : {
-		"name"  : "Luke Chavers",
-		"email" : "luke@chavers.io",
-		"url"   : "http://www.lukechavers.com/"
-	},
-	"scripts"        : {
-		"grits"          : "scripts/grits-render-once.sh",
-		"live"           : "scripts/grits-render-live.sh",
-		"live-quiet"     : "scripts/grits-render-live-quiet.sh",
-		"grits-version"  : "scripts/grits-version.sh",
-		"grits-config"   : "scripts/grits-config.sh",
-		"grits-help"     : "scripts/grits-help.sh",
-		"server-delete"  : "scripts/server-delete.sh",
-		"server-monitor" : "scripts/server-monitor.sh",
-		"server-reload"  : "scripts/server-reload.sh",
-		"server-restart" : "scripts/server-restart.sh",
-		"server-start"   : "scripts/server-start.sh",
-		"server-status"  : "scripts/server-status.sh",
-		"server-stop"    : "scripts/server-stop.sh"
-	},
-	"keywords"        : [
-		"dasix", "website", "s3", "static", "dasix.com"
-	],
-	"dependencies"    : {
-		"grits"             : "dasix/grits#master",
-		"grits-plugin-docs" : "dasix/grits-plugin-docs#master",
-		"grits-plugin-pdf"  : "dasix/grits-plugin-pdf#master",
-		"lodash"            : "^4.8.1",
-		"tipe"              : "^0.1.12"
-	},
-	"//dependencies" : {
-		"grunt"               : "0.4.5",
-		"grunt-contrib-clean" : "0.7.0",
-		"grunt-contrib-copy"  : "0.8.2",
-		"grunt-contrib-watch" : "0.6.1",
-		"grunt-sass"          : "1.1.0",
-		"grunt-shell"         : "1.1.2",
-		"lodash"              : "4.3.0",
-		"tipe"                : "0.1.12",
-		"underscore"          : "1.8.3"
-	}
+  "name": "dasix-com",
+  "version": "0.2.0",
+  "description": "The source for our website, http://dasix.com",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/Dasix/dasix.com",
+  "author": {
+    "name": "Luke Chavers",
+    "email": "luke@chavers.io",
+    "url": "http://www.lukechavers.com/"
+  },
+  "scripts": {
+    "grits": "scripts/grits-render-once.sh",
+    "live": "scripts/grits-render-live.sh",
+    "live-quiet": "scripts/grits-render-live-quiet.sh",
+    "grits-version": "scripts/grits-version.sh",
+    "grits-config": "scripts/grits-config.sh",
+    "grits-help": "scripts/grits-help.sh",
+    "server-delete": "scripts/server-delete.sh",
+    "server-monitor": "scripts/server-monitor.sh",
+    "server-reload": "scripts/server-reload.sh",
+    "server-restart": "scripts/server-restart.sh",
+    "server-start": "scripts/server-start.sh",
+    "server-status": "scripts/server-status.sh",
+    "server-stop": "scripts/server-stop.sh"
+  },
+  "keywords": [
+    "dasix",
+    "website",
+    "s3",
+    "static",
+    "dasix.com"
+  ],
+  "dependencies": {
+    "grits": "github:dasix/grits#master",
+    "grits-plugin-docs": "github:dasix/grits-plugin-docs#master",
+    "grits-plugin-pdf": "github:dasix/grits-plugin-pdf#master",
+    "lodash": "^4.8.1",
+    "tipe": "^0.1.12"
+  },
+  "//dependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-copy": "0.8.2",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-sass": "1.1.0",
+    "grunt-shell": "1.1.2",
+    "lodash": "4.3.0",
+    "tipe": "0.1.12",
+    "underscore": "1.8.3"
+  }
 }
