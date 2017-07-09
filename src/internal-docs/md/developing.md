@@ -3,10 +3,23 @@ Developing
 
 ### Travis-CI
 
+#### Master
+
 Any pushes to the `master` branch of this repository will trigger a [Travis-CI](http://travis-ci.org)
 build, which will automatically publish to AWS S3.
 
 This means that the site can be easily edited here in GitHub.
+
+See results at [dasix.com](http://dasix.com)
+
+#### Staging
+
+Any pushes to the `master` branch of this repository will trigger a [Travis-CI](http://travis-ci.org)
+build, which will automatically publish to AWS S3.
+
+This means that the site can be easily edited for testing here in GitHub.
+
+See results at [staging.dasix.com](http://staging.dasix.com)
 
 ### Vagrant
 
