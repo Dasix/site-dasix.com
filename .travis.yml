@@ -30,11 +30,11 @@ deploy:
     on:
       repo: Dasix/site-dasix.com
   - provider: s3
-      access_key_id: $DASIX_STAGING_ACCESS_KEY
-      secret_access_key: $DASIX_STAGING_SECRET_KEY
-      bucket: staging.dasix.com
-      local-dir: dist
-      acl: public_read
-      skip_cleanup: true
-      on:
-        repo: Dasix/site-dasix.com/tree/staging
+    access_key_id: $DASIX_STAGING_ACCESS_KEY
+    secret_access_key: $DASIX_STAGING_SECRET_KEY
+    bucket: staging.dasix.com
+    local-dir: dist
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: Dasix/site-dasix.com/tree/staging
