@@ -37,7 +37,7 @@
 
 {+bodyContent/}
 
-{>"partial/core/footer1"/}
+{>"partial/core/footer-with-contact-form"/}
 
 <!--scripts-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -53,7 +53,6 @@
 <script type="text/javascript" src="assets/js/parallax.min.js"></script>
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/mailchimp-custom.js"></script>
 
 </body>
 
