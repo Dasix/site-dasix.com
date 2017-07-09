@@ -3,7 +3,11 @@
 		"browser": false,
 		"node": true
 	},
-	"global-strict": [2, "always"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"impliedStrict": true
+		}
+	},
 	"rules": {
 		"no-multi-spaces": 0,
 		"no-underscore-dangle": 0,

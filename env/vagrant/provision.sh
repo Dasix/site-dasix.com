@@ -23,10 +23,12 @@ exec_github_script "yum-update-cache"
 exec_github_script "yum-install-common"
 exec_github_script "yum-install-git"
 exec_github_script "yum-install-node-js"
+exec_github_script "yum-install-bower"
 exec_github_script "yum-install-fonts"
 exec_github_script "npm-install-pm2"
 #exec_github_script "npm-create-dep-symlink"
 exec_github_script "npm-install-deps"
+exec_github_script "bower-install-deps"
 
 # Project Specific Scripts
 #"$PROVISION_SCRIPT_ROOT/execute-pm2-tasks.sh"

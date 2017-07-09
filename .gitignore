@@ -51,6 +51,9 @@ nbproject
 # -- IntelliJ / phpStorm / webStorm ----- #
 
 *.iml
+.idea/dbnavigator.xml
+.idea/encodings.xml
+.idea/vcs.xml
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
@@ -86,4 +89,3 @@ tmp/
 
 ciel-wiki/
 archive/
-=====================================

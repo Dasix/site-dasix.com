@@ -1,0 +1,26 @@
+{
+  "name": "dasix-com",
+  "description": "The source for our website, http://dasix.com",
+  "main": "",
+  "private": true,
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dasix",
+    "website",
+    "s3",
+    "static",
+    "dasix.com"
+  ],
+  "homepage": "https://github.com/Dasix/dasix.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/third-party/bower",
+    "test",
+    "tests"
+  ]
+}
