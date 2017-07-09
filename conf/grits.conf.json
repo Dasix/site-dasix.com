@@ -1,7 +1,14 @@
 {
+	"defaultLayout": "main";
 	"paths": {
 		"root": [
 			"../src"
+		],
+		"static": [
+			"..src/static"
+		],
+		"sassi": [
+
 		],
 		"output": [
 			"../dist"
