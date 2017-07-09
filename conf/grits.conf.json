@@ -1,5 +1,5 @@
 {
-	"defaultLayout": "main";
+	"defaultLayout": "main",
 	"paths": {
 		"root": [
 			"../src"
