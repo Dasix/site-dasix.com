@@ -37,7 +37,7 @@
 
 {+bodyContent/}
 
-{>"partial/core/footer"/}
+{>"partial/core/footer-with-contact-form"/}
 
 <!--scripts-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
