@@ -2,6 +2,7 @@
   "name": "dasix-com",
   "description": "The source for our website, http://dasix.com",
   "main": "",
+  "private": true,
   "authors": [
     "[object Object]"
   ],
