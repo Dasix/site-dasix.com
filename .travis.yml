@@ -6,6 +6,7 @@ node_js:
 branches:
   only:
   - master
+  - staging
 
 notifications:
   slack: dasix:roV0ekeggkEYugjwMwsmebrm
@@ -28,3 +29,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: Dasix/site-dasix.com
+    branch: master
