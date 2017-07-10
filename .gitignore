@@ -34,7 +34,7 @@ node_modules
 # -- Bower.io --------------------------- #
 
 bower_components
-#bower
+bower
 
 # -- NPM -------------------------------- #
 
