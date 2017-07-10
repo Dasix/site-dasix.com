@@ -5,10 +5,28 @@
 			"../src"
 		],
 		"static": [
-			"..src/static"
+			"../src/static",
+			"../src/third-party/template-files/assets/img -> img",
+			"../src/third-party/bower/jquery/dist -> lib/jquery",
+			"../src/third-party/bower/bootstrap-hover-dropdown -> lib/bootstrap-hover-dropdown",
+			"../src/third-party/bower/bootstrap-sass/assets/javascripts -> lib/bootstrap",
+			"../src/third-party/bower/bootstrap-sass/assets/fonts/bootstrap -> fonts/bootstrap",
+			"../src/third-party/bower/Ionicons/css -> lib/Ionicons/css",
+			"../src/third-party/bower/Ionicons/fonts -> lib/Ionicons/fonts",
+			"../src/third-party/bower/flexslider -> lib/flexslider",
+			"../src/third-party/bower/animate.css -> lib/animate.css",
+			"../src/third-party/bower/jquery.easing/js -> lib/jquery.easing",
+			"../src/third-party/bower/jquery-parallax -> lib/jquery-parallax",
+			"../src/third-party/bower/jquery-placeholder -> lib/jquery-placeholder",
+			"../src/third-party/bower/jquery-sticky -> lib/jquery-sticky",
+			"../src/third-party/bower/jquery-mixitup/dist -> lib/jquery-mixitup",
+			"../src/third-party/bower/wow/dist -> lib/wow",
+			"../src/third-party/bower/flexslider -> lib/flexslider"
 		],
 		"sassi": [
-
+			"../src/third-party/template-files/scss/",
+			"../src/third-party/bower/bootstrap-sass/assets/stylesheets",
+			"../src/third-party/bower/validetta/src"
 		],
 		"output": [
 			"../dist"
