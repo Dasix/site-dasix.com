@@ -52,22 +52,61 @@
             <div class="col-md-5">
                 <div class="footer-col">
                     <h3>Get in touch</h3>
-                    <form>
+                    <form role="form" action="" id="contactForm">
+
+                        <input type="hidden" id="hdnApiUrl" value="https://kapr3wxth8.execute-api.us-east-1.amazonaws.com/latest/ContactEmail">
+                        <input type="hidden" id="hdnApiKey" value="08eKzQyHM85S27A1fnNcw3P06lUf0BiX6h2yyHX1">
+                        <input type="hidden" id="hdnTargetId" value="78c1519c-8e28-4f6a-9349-b64555736d24">
+
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="fName" type="text" class="form-control" placeholder="Name...">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputFromName"
+                                        name="fromName"
+                                        placeholder="Your Full Name Here"
+                                        data-validetta="required"
+                                        data-vd-message-required="We definitely need this!"
+                                >
                             </div>
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" placeholder="Email...">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputFromEmail"
+                                        name="fromEmail"
+                                        placeholder="Your Email Here"
+                                        data-validetta="required,email"
+                                        data-vd-message-required="Without your email address, we can't reply!"
+                                        data-vd-message-email="This doesn't look like a proper address!"
+                                >
                             </div>
                             <div class="col-md-12">
-                                <input id="subject" type="text" class="form-control" placeholder="Subject...">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputSubject"
+                                        name="subject"
+                                        placeholder="Enter a Subject Here"
+                                        data-validetta="required"
+                                        data-vd-message-required="Please summarize your message here."
+                                >
                             </div>
-                            <div class="col-md-12">
-                                <textarea id="message" class="form-control" placeholder="Message..." rows="7"></textarea>
+                            <div class="col-md-12" id="alertContainer">
+                                <textarea
+                                        class="form-control"
+                                        rows="5"
+                                        id="inputBody"
+                                        name="body"
+                                        placeholder="Enter a Message Here"
+                                        data-validetta="required"
+                                        data-vd-message-required="Please tell us how we can help you!"
+                                ></textarea >
                             </div>
                             <div class="col-md-12 text-right">
-                                <button type="submit" class="btn btn-lg btn-white">Send messege</button>
+                                <button type="reset" id="btnContactReset" class="btn btn-lg btn-white" >Clear Form</button >
+                                <button type="submit" id="btnContactSubmit" class="btn btn-lg btn-white">Send message</button>
                             </div>
                         </div>
                     </form>
