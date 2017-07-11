@@ -21,7 +21,8 @@
 			"../src/third-party/bower/jquery-sticky -> lib/jquery-sticky",
 			"../src/third-party/bower/jquery-mixitup/dist -> lib/jquery-mixitup",
 			"../src/third-party/bower/wow/dist -> lib/wow",
-			"../src/third-party/bower/flexslider -> lib/flexslider"
+			"../src/third-party/bower/flexslider -> lib/flexslider",
+			"../src/third-party/bower/validetta/dist -> lib/validetta"
 		],
 		"sassi": [
 			"../src/third-party/template-files/scss/",
