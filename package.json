@@ -1,15 +1,22 @@
 {
   "name": "dasix-com",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "The source for our website, http://dasix.com",
   "license": "MIT",
   "private": true,
   "repository": "https://github.com/Dasix/dasix.com",
-  "author": {
-    "name": "Luke Chavers",
-    "email": "luke@chavers.io",
-    "url": "http://www.lukechavers.com/"
-  },
+  "contributors": [
+    {
+      "name": "Luke Chavers",
+      "email": "luke@dasix.com",
+      "url": "http://www.dasix.com"
+    },
+    {
+      "name": "Rob White IV",
+      "email": "rob@dasix.com",
+      "url": "http://www.dasix.com"
+    }
+  ],
   "scripts": {
     "grits": "scripts/grits-render-once.sh",
     "live": "scripts/grits-render-live.sh",

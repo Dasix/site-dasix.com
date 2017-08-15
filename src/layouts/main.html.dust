@@ -20,7 +20,7 @@
     <link href="/css/main.css" rel="stylesheet" type="text/css">
 
     <!--google font family-->
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
 
     <!--flex slider css-->
     <link href="/lib/flexslider/flexslider.css" rel="stylesheet">
