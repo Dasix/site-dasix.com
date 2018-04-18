@@ -9,6 +9,7 @@
     <title>{?title}{title}{:else}Dasix, Inc.{/title}</title>
     <meta name="description" content="HTML5 & CSS3">
     <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <!--ion icon fonts css-->
     <link href="/lib/Ionicons/css/ionicons.css" rel="stylesheet">
@@ -42,7 +43,6 @@
 
 {+bodyContent/}
 
-{!{>"partial/core/footer"/}!}
 {>"partial/core/footer-with-contact-form"/}
 
 <!--scripts-->

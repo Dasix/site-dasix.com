@@ -68,6 +68,7 @@
                                         placeholder="Your Full Name Here"
                                         data-validetta="required"
                                         data-vd-message-required="We definitely need this!"
+										autocomplete="name"
                                 >
                             </div>
                             <div class="col-md-6">
@@ -80,6 +81,7 @@
                                         data-validetta="required,email"
                                         data-vd-message-required="Without your email address, we can't reply!"
                                         data-vd-message-email="This doesn't look like a proper address!"
+										autocomplete="email"
                                 >
                             </div>
                             <div class="col-md-12">
