@@ -11,12 +11,12 @@ $( window ).resize(function() {
 
 $(document).ready(function() {
     $(".sticky").sticky({topSpacing: 0});
-    
+
     //search trigger
     jQuery('.icon-search, .search-close').click(function () {
         jQuery('.search-form-nav').animate({height: 'toggle'}, 500);
     });
-    
+
     $(function() {
   $('.smooth-scroll a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
     }
   });
 });
-    
+
 });
 
 
@@ -67,7 +67,7 @@ $("[data-toggle=tooltip]").tooltip();
 
 
 /*========flex-gallery slide====*/
-$(window).load(function() {
+$(window).on('load', function() {
     $('.flexslider').flexslider({
         directionNav: false,
         slideshowSpeed: 3000,
@@ -78,7 +78,7 @@ $(window).load(function() {
 /*=========================*/
      /*========Animation on scroll with wow.js====*/
      /*==========================*/
-     
+
    wow = new WOW(
       {
         animateClass: 'animated',
@@ -87,7 +87,7 @@ $(window).load(function() {
       }
     );
     wow.init();
-    
+
     /* -------------------
  Parallax Sections
  ---------------------*/
@@ -95,5 +95,18 @@ if (!Modernizr.touch) {
     $('.parallax-1').parallax("50%", 0.5);
     $('.page-tree-bg').parallax("50%", 0.5);
 }
+
+/**
+ *  Code that sets footer copyright year
+ */
+
+$(document).ready(function() {
+
+	var d = new Date();
+	var copyYear = d.getFullYear();
+
+	$('#copy-year').text(copyYear);
+
+});
 
 
