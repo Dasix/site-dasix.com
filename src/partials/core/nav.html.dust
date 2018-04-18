@@ -9,10 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-					<div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-						<img src="/img/dasix-76x28.png" class="img-responsive" alt="">
-						<meta itemprop="url" content="/img/dasix-76x28.png">
-					</div>
+					<img itemprop="logo" src="/img/dasix-76x28.png" class="img-responsive" alt="">
 				</a>
             </div>
             <div class="navbar-collapse collapse">

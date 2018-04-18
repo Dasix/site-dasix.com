@@ -11,6 +11,8 @@
     <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
+	<link itemprop="url" href="https://dasix.com/" />
+
     <!--ion icon fonts css-->
     <link href="/lib/Ionicons/css/ionicons.css" rel="stylesheet">
 
