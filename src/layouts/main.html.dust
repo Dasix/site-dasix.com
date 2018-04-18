@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html itemscope itemtype="http://schema.org/Corporation">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -10,8 +10,6 @@
     <meta name="description" content="HTML5 & CSS3">
     <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-	<link itemprop="url" href="https://dasix.com/" />
 
     <!--ion icon fonts css-->
     <link href="/lib/Ionicons/css/ionicons.css" rel="stylesheet">
@@ -63,6 +61,30 @@
 <script type="text/javascript" src="/lib/validetta/validetta.min.js"></script>
 <script type="text/javascript" src="/js/footer-contact.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
+
+<!-- STRUCTURED LD+JSON DATA FOR BROWSERS -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Dasix, Inc.",
+  "url": "https://www.dasix.com",
+  "logo": "https://dasix.com/img/dasix-76x28.png",
+  "address": {
+  	"@type": "PostalAddress",
+    "addressLocality": "Pensacola",
+    "addressRegion": "FL",
+    "streetAddress": "9024 North Palafox Street",
+    "postalCode": "32534"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1-386-463-2749",
+    "email": "info@dasix.com",
+    "contactType": "customer service"
+  }]
+}
+</script>
 
 </body>
 
