@@ -17,6 +17,10 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
+            - name: Install NPM dependencies
+              run: npm install
+              working-directory: ./
+
             - name: Install the Bower package manager globally
               run: npm install -g bower
               working-directory: ./
@@ -30,11 +34,11 @@ jobs:
               working-directory: ./
 
             - name: Display Grits.js config
-              run: ./scripts/grits-config.sh
+              run: npm run grits-config
               working-directory: ./
 
             - name: Render site with Grits
-              run: ./scripts/grits-render-once.sh
+              run: npm run grits
               working-directory: ./
 
             - name: Upload to S3 bucket
