@@ -29,6 +29,10 @@ jobs:
               run: chmod +x ./scripts -R
               working-directory: ./
 
+            - name: Display Grits.js config
+              run: npm run grits-config
+              working-directory: ./
+
             - name: Render site with Grits
               run: npm run grits
               working-directory: ./
