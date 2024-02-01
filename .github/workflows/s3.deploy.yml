@@ -30,11 +30,11 @@ jobs:
               working-directory: ./
 
             - name: Display Grits.js config
-              run: npm run grits-config
+              run: ./scripts/grits-config.sh
               working-directory: ./
 
             - name: Render site with Grits
-              run: npm run grits
+              run: ./scripts/grits-render-once.sh
               working-directory: ./
 
             - name: Upload to S3 bucket
