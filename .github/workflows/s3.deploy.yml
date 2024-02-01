@@ -30,7 +30,7 @@ jobs:
               working-directory: ./
 
             - name: Render site with Grits
-              run: npm run-script grits
+              run: npm run grits
               working-directory: ./
 
             - name: Upload to S3 bucket
