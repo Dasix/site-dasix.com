@@ -1,0 +1,45 @@
+name: Render and Deploy to S3
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node_version: [ 16.x ]
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Install the Bower package manager globally
+              run: npm install -g bower
+              working-directory: ./
+
+            - name: Install dependencies using Bower
+              run: bower install
+              working-directory: ./
+
+            - name: Grant execute permissions
+              run: chmod +x ./scripts -R
+              working-directory: ./
+
+            - name: Render site with Grits
+              run: npm run-script grits
+              working-directory: ./
+
+            - name: Upload to S3 bucket
+              uses: jakejarvis/s3-sync-action@master
+              with:
+                  args: --follow-symlinks --delete
+              env:
+                  SOURCE_DIR: ./dist
+                  AWS_REGION: "us-east-1"
+                  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
