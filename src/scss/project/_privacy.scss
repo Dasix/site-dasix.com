@@ -1,0 +1,12 @@
+#privacy {
+	.padding-10 {
+		padding: 10px 0;
+		h4 {
+			color: #0FAF97;
+		}
+	}
+	@media (max-width: 800px) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
