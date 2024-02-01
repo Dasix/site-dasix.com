@@ -4,6 +4,12 @@
 		h4 {
 			color: #0FAF97;
 		}
+		ul {
+			padding-top: 10px;
+			li::marker {
+				color: #0FAF97;
+			}
+		}
 	}
 	@media (max-width: 800px) {
 		padding-left: 10%;
